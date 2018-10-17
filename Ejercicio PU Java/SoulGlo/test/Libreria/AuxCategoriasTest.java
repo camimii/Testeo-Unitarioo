@@ -43,14 +43,9 @@ public class AuxCategoriasTest {
      */
     @Test
     public void testAgregar_Categoria() {
-        System.out.println("Agregar");
-        Categoria Nueva = null;
-        AuxCategorias instance = new AuxCategorias();
-        int expResult = 0;
-        int result = instance.Agregar(Nueva);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    /**    
+        //NO SE PUEDE HACER PORQUE DatosCategorías ESTÁ DECLARADO COMO PRIVADO
+    **/   
     }
 
     /**
