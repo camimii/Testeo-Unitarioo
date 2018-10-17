@@ -44,7 +44,7 @@ public class AuxCategoriasTest {
     @Test
     public void testAgregar_Categoria() {
     /**    
-        //NO SE PUEDE HACER PORQUE DatosCategorías ESTÁ DECLARADO COMO PRIVADO
+        //NO SE PUEDE HACER PORQUE DatosCategorias ESTÁ DECLARADO COMO PRIVADO
     **/   
     }
 
