@@ -45,12 +45,15 @@ public class AuxCategoriasTest {
     public void testAgregar_Categoria() {
     /** La prueba falla porque el arraylist DatosCategorias no ha sido inicializado,
         además está declarado como private y no se puede acceder para evaluarlo.**/
+    
         
         AuxCategorias instance = new AuxCategorias();
         Categoria nueva = new Categoria(1234, "Carla", "Descripción");
         instance.Agregar(nueva);
         int esperado = 1;
-    
+    /**
+     * Correccion: agregar metodo getDatosCategorias();
+     */
         //Assert
         assertEquals(esperado,instance.DatosCategorias.size() );  
     }
