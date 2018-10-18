@@ -44,6 +44,8 @@ public class AuxCategoriasTest {
     @Test
     public void testAgregar_Categoria() {
     /**    
+     
+    
         //NO SE PUEDE HACER PORQUE DatosCategorías ESTÁ DECLARADO COMO PRIVADO
     **/   
     }
@@ -57,13 +59,11 @@ public class AuxCategoriasTest {
 
         //Act
         AuxCategorias instance = new AuxCategorias();
-        Categoria nueva = new Categoria(1234, "Carla", "Descripción");
         instance.Agregar(1234, "Carla", "Descripción");
-        ArrayList<Categoria> esperado = new ArrayList<Categoria>();
-        esperado.add(nueva);
+        int esperado = 1;
         int res = instance.DatosCategorias.size();
         //Assert
-        assertEquals(esperado.size(),res );
+        assertEquals(esperado,res );
     }
     /**
      * Test of Eliminar method, of class AuxCategorias.
