@@ -51,21 +51,20 @@ public class AuxCategoriasTest {
     /**
      * Test of Agregar method, of class AuxCategorias.
      */
-    @Test(expected=NullPointerException.class)
+    @Test
     public void testAgregar_3args() {
         //Arrange
-        int idcat = 1234;
-        String nom = "Carla";
-        String desc = "Descripción";
-        
+
         //Act
         AuxCategorias instance = new AuxCategorias();
-        Categoria nueva = new Categoria(idcat, nom, desc);
+        Categoria nueva = new Categoria(1234, "Carla", "Descripción");
+        instance.Agregar(1234, "Carla", "Descripción");
         ArrayList<Categoria> esperado = new ArrayList<Categoria>();
+        esperado.add(nueva);
+        int res = instance.DatosCategorias.size();
         //Assert
-        assertEquals(esperado.add(nueva), instance.Agregar(idcat, nom, desc));
+        assertEquals(esperado.size(),res );
     }
-
     /**
      * Test of Eliminar method, of class AuxCategorias.
      */
