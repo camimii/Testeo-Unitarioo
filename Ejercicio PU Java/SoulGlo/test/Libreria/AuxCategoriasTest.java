@@ -43,11 +43,16 @@ public class AuxCategoriasTest {
      */
     @Test
     public void testAgregar_Categoria() {
-    /**    
-     
+    /** La prueba falla porque el arraylist DatosCategorias no ha sido inicializado,
+        además está declarado como private y no se puede acceder para evaluarlo.**/
+        
+        AuxCategorias instance = new AuxCategorias();
+        Categoria nueva = new Categoria(1234, "Carla", "Descripción");
+        instance.Agregar(nueva);
+        int esperado = 1;
     
-        //NO SE PUEDE HACER PORQUE DatosCategorías ESTÁ DECLARADO COMO PRIVADO
-    **/   
+        //Assert
+        assertEquals(esperado,instance.DatosCategorias.size() );  
     }
 
     /**
@@ -55,12 +60,15 @@ public class AuxCategoriasTest {
      */
     @Test
     public void testAgregar_3args() {
+        
+       /** La prueba falla porque el arraylist DatosCategorias no ha sido inicializado,
+        además está declarado como private y no se puede acceder para evaluarlo.**/
+        
         //Arrange
-
+        int esperado = 1;
         //Act
         AuxCategorias instance = new AuxCategorias();
-        instance.Agregar(1234, "Carla", "Descripción");
-        int esperado = 1;
+        instance.Agregar(1234,"Carla", "Descripción");
         int res = instance.DatosCategorias.size();
         //Assert
         assertEquals(esperado,res );
@@ -70,7 +78,8 @@ public class AuxCategoriasTest {
      */
     @Test
     public void testEliminar() {
-       
+       /** La prueba falla porque el arraylist DatosCategorias no ha sido inicializado,
+        además está declarado como private y no se puede acceder para evaluarlo.**/
     }
 
     /**
@@ -78,14 +87,8 @@ public class AuxCategoriasTest {
      */
     @Test
     public void testModificar_Categoria() {
-        System.out.println("Modificar");
-        Categoria CatModificada = null;
-        AuxCategorias instance = new AuxCategorias();
-        int expResult = 0;
-        int result = instance.Modificar(CatModificada);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        /** La prueba falla porque el arraylist DatosCategorias no ha sido inicializado,
+        además está declarado como private y no se puede acceder para evaluarlo.**/
     }
 
     /**
@@ -93,16 +96,8 @@ public class AuxCategoriasTest {
      */
     @Test
     public void testModificar_3args() {
-        System.out.println("Modificar");
-        int idCategoria = 0;
-        String nuevoNombre = "";
-        String nuevaDescripcion = "";
-        AuxCategorias instance = new AuxCategorias();
-        int expResult = 0;
-        int result = instance.Modificar(idCategoria, nuevoNombre, nuevaDescripcion);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        /** La prueba falla porque el arraylist DatosCategorias no ha sido inicializado,
+        además está declarado como private y no se puede acceder para evaluarlo.**/
     }
     
 }

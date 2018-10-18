@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author Diego
  */
 public class AuxCategorias {
-    protected ArrayList<Categoria> DatosCategorias; 
+    private ArrayList<Categoria> DatosCategorias; 
     
     /**
      * 
