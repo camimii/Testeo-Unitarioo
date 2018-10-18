@@ -62,10 +62,8 @@ public class AuxCategoriasTest {
         AuxCategorias instance = new AuxCategorias();
         Categoria nueva = new Categoria(idcat, nom, desc);
         ArrayList<Categoria> esperado = new ArrayList<Categoria>();
-        esperado.add(nueva);
-        int result = instance.Agregar(idcat, nom, desc);
         //Assert
-        assertSame(esperado, result);
+        assertEquals(esperado.add(nueva), instance.Agregar(idcat, nom, desc));
     }
 
     /**
@@ -73,7 +71,7 @@ public class AuxCategoriasTest {
      */
     @Test
     public void testEliminar() {
-        
+       
     }
 
     /**
